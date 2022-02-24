@@ -1,0 +1,52 @@
+
+.background {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('../../images/unsplash.jpg');
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    @media screen and (min-width: 768px){
+        width: 40%;
+    }
+    &__title{
+        margin: auto;
+    }
+    &__footer{
+        display: flex;
+        margin: 40px 0;
+        justify-content: center;
+    }
+    .footer__button {
+        margin: 8px;
+        text-transform: uppercase;
+        background: #000000;
+        border: 2px solid #000000;
+        border-radius: 6px;
+        padding: 16px 56px;
+        color: #FFFFFF;
+        font-weight: 900;
+        text-decoration: none;
+        &--outline{
+            background-color: #FFFFFF;
+            border: 2px solid #000000;
+            color: #000000;
+            &:active {
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        &:active {
+            background-color: #333;
+            border-color: #333;
+        }
+    }
+}
