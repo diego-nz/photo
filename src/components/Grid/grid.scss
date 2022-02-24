@@ -1,0 +1,33 @@
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 375px;
+    &__title{
+        width: 100%;
+        margin: 16px 8px;
+    }
+    &__img{
+        width: 45%;
+        margin: 8px;
+        @media screen and (min-width: 768px) {
+            width: 32%;
+        }
+    }
+    &__button{
+        text-transform: uppercase;
+        border-radius: 6px;
+        padding: 16px;
+        font-weight: 900;
+        margin: 32px auto;
+        display: block;
+        background-color: #FFFFFF;
+        border: 2px solid #000000;
+        color: #000000;
+        &:active {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+    }
+}

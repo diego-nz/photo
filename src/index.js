@@ -1,12 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
+import { SplashScreen } from './pages/SplashScreen/SplashScreen';
+import { Form } from './components/Form/Form';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { Home } from './pages/Home/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+          <Route path='/' element={<SplashScreen />} />
+      </Routes>
+      <Routes>
+          <Route path='/signin' element={<Form type='signin'/>} />
+      </Routes>
+      <Routes>
+          <Route path='/login' element={<Form type='login'/>} />
+      </Routes>
+      <Routes>
+          <Route path='/home' element={<Home />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

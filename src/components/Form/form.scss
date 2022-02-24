@@ -1,0 +1,43 @@
+.form {
+    fieldset {
+        border: none;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    &__grid {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        margin-bottom: 16px;
+        padding: 16px;
+        border: solid 2px #000000;
+        font-size: 15px;
+    }
+    &__button--primary {
+        margin: 8px 0;
+        text-transform: uppercase;
+        background: #000000;
+        border: 2px solid #000000;
+        border-radius: 6px;
+        padding: 16px;
+        color: #FFFFFF;
+        font-weight: 900;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        &:active {
+            background-color: #333;
+            border-color: #333;
+        }
+    }
+    &__error{
+        color: #ff0000;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f8d7da;
+        padding: 8px 4px;
+        margin: 16px 0;
+    }
+}
