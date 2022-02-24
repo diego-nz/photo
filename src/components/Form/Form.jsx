@@ -38,7 +38,7 @@ export const Form = ({ type='signin' }) => {
                   <legend>
                       <h1>{type === 'login' ? 'Login' : 'Register'}</h1>
                   </legend>
-                  <small className='form__error'>{error}</small>
+                  {error && <small className='form__error'>{error}</small>}
                   <input type="text" inputMode='email' className='form__input' name='email' placeholder='email' onChange={handleInput} />
                   <input type="password"  className='form__input' name='password' placeholder='password' onChange={handleInput}/>
                   <button type='submit' value={type === 'login' ? 'login' : 'next'} className='form__button--primary'>{type === 'login' ? 'login' : 'next'}</button>
