@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useFetch } from '../../hooks/useFetch';
 import { useCounter } from '../../hooks/useCounter';
 import './grid.scss';
-import { Modal } from '../Modal/Modal';
 
 export const Grid = () => {
     const { state, increment } = useCounter(1);
